@@ -88,12 +88,7 @@ untuk web static ini
 Terdapat log act yang mencantumkan kontribusi kami masing-masing dalam proyek ini.
 
 ## Versioning
-Kami menggunakan github untuk version control, serta pertemuan langsung secara tatap muka.
-
-## PIC
-* **Patrick Segara** - PJ Web Static Kelompok 2 - [patricksegara](https://github.com/patricksegara)
-
-cek [kontributor](https://docs.google.com/document/d/1liWSbPbjdCybE40tjTHKcpNfbiDAxUY-/edit#) untuk lebih lengkapnya.
+Menggunakan github untuk version control, serta pertemuan langsung secara tatap muka.
 
 ## Acknowledgements
 * Web Static ini dibuat untuk memenuhi tugas SPARTA 2018 sebagai MVP dari tugas Tech Consultant Milestone 2
