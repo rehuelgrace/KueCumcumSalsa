@@ -1,0 +1,357 @@
+body{
+    margin: 2px;
+    padding: 0;
+    font-family: arial;
+}
+
+
+.nduwuran{
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0 0 20px;
+    opacity: 0.7;
+    background-color: white;
+    text-decoration-color: #7a342f;
+    font-weight: bold;
+    z-index: 10;
+}
+
+
+.nduwuran .logo{
+    opacity: 1;
+    margin: 0 50px;
+    height: 80px;
+   
+}
+ul{
+    align-content: flex-end;
+    padding: 0;
+    display: flex;
+}
+ul li{
+    list-style: none;
+    padding: 10px 40px;
+}
+ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #262626;
+    position: relative;
+    transition: .5s;
+}
+ul li a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 26px;
+    background: #ff5f5f;
+    transform-style: preserve-3d;
+    transform: scale(0) rotateY(0deg) skew(10deg);
+    transition: 1.5s cubic-bezier(.43,1.91,.35,.74);
+    z-index: -1;
+}
+ul li:hover a:before{
+    transform: scale(1.2) rotateY(360deg) skew(10deg);
+}
+ul li:hover a{
+    color:#fff;
+}
+ul li a:after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: grey;
+    transform-style: preserve-3d;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 1.5s cubic-bezier(.43,1.91,.35,.74);
+    z-index: -2;
+    border-radius: 50%;
+    top: 3%;
+    left: 50%;
+    opacity: 0.5
+}
+ul li:hover a:after{
+    transform: translate(-50%,-50%) scale(1.2);
+}
+#slider {
+  width: 1000px;
+  height: 1280px;
+  overflow: hidden;
+  /*border: 1px solid #c69;*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.slide {
+  width: 720px;
+  height: 100px;
+  float: left;
+  position: relative;
+}
+.slide {
+  width: 720px;
+  height: 320px;
+  float: left;
+  position: relative;
+}
+.slide {
+  width: 720px;
+  height: 320px;
+  float: left;
+  position: relative;
+}
+
+#slide-testimoni {
+  width: 400%;
+  position: relative;
+  left: 0;
+  -webkit-animation: scroller 20s infinite;
+          animation: scroller 20s infinite;
+}
+
+@-webkit-keyframes scroller {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  33% {
+    -webkit-transform: translateX(-400px);
+            transform: translateX(-400px);
+  }
+  66% {
+    -webkit-transform: translateX(-1150px);
+            transform: translateX(-1150px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes scroller {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  33% {
+    -webkit-transform: translateX(-400px);
+            transform: translateX(-400px);
+  }
+  66% {
+    -webkit-transform: translateX(-1150px);
+            transform: translateX(-1150px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+body {
+  font-family: sans-serif;
+}
+
+#slider {
+  margin: 0 auto;
+}
+
+.slide:nth-child(1) {
+  background: #c69;
+}
+
+.slide:nth-child(2) {
+  background: wheat;
+}
+
+.slide:nth-child(3) {
+  background: #eee;
+}
+.mainpic{
+    display: block;
+    margin: 0 auto;
+
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-size: cover;
+    object-fit: cover;
+    width:75%;
+    height:600px;
+}
+.headtentang h1{
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: rgb(88, 40, 12);
+    text-shadow: 3px 3px 1px black;
+}
+
+.headtentang h2{
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    color: #D0B2AB;
+}
+
+.tentang{
+    font-size: 1.5em !important;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    color: #333;
+    width: 700px;
+    margin: 25px 30px 20px 25px;
+    padding: 0 20px 20px 20px;
+    border: 1px solid rgba(158, 145, 133, 0.315);
+}
+
+.kepala{
+    flex-direction: column;
+}
+
+.garis{
+    height: 3px;
+    background-color:rgb(211, 127, 71);
+    margin: 15px 250px 50px 250px;
+}
+
+.container1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 auto;
+    background-image: linear-gradient(to left, #ffffff, #ffffff, #ffffff, #e6e4e7, #cfc9cf, #b9afb6, #a5959c);
+}
+.sidepic{
+    width: 15%;
+    display: block;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.renyah h1{
+    color: rgb(226, 150, 150);
+    font-size: 75px;
+    text-align: center;
+    margin: 0;
+}
+.renyah {
+    display: flex;
+    color: rgb(226, 150, 150);
+    font-size: 20px;
+    margin: 0;
+}
+
+.sidepic1{
+    width: 550px;
+    display: block;
+    margin: left ;
+}
+
+.tahanmudah{
+    display: flex;
+    justify-content: space-between;
+}
+.polhom{
+    width: 30%;
+    display: block;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  
+.copol {
+    text-align: center;
+    padding: 10px 0px;
+}
+.last{
+    position: relative;
+}
+.lastpic{
+    justify-content: center;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    width: 100%;
+    display: cover;
+    margin: center ;
+}
+.centerpic{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 75px;
+        color: whitesmoke;
+        font-family: 'Patua One', cursive;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.cumsaldef {
+    display: flex;
+}
+
+.cumsalguarantee {
+    display: flex;
+}
+
+.cumsaldef .illust img{
+    background-color: rgb(82, 50, 50);
+}
+
+h3{
+    font-size:  15px; 
+    font-family : 'proxima-nova',  'roboto', sans-serif;
+}
+h1{
+    font: normal 80px "Red Hat Text";
+}
+
+.testimonibar{
+    width: 100%;
+    height: 1500px;
+    background-color: navajowhite;
+    text-align: center;
+}
+
+.footerbar{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    background-color: darkgray;
+}
+
+.contaimer{
+    background-color: #c69;
+}
+
+.footerbar .container img.logo{
+    margin-top: 50px; 
+}
+
+.footerbar .container p.contact {
+    font-size: 35px;
+}
+
+.rowstore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 5em 5em 5em;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
